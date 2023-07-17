@@ -12,7 +12,7 @@ Obfuscator.cpp is a program designed to find #define preprocessors used to funct
 <filepath> is the command to be replaced by the -help command\n";
 
 # - Example -
-
+```cpp
 // in our code....
 #define SomeFunctionName abc
 
@@ -24,9 +24,9 @@ int main(int argc, char* argv[]) {
   SomeFunctionName(); <- the function can still be called with this alias
   return 0;
 }
-
-// After using this file with Obfuscator...
-
+```
+After using this file with Obfuscator...
+```cpp
 // in our code....
 #define SomeFunctionName t5p
 
@@ -38,3 +38,4 @@ int main(int argc, char* argv[]) {
   SomeFunctionName(); <- the function can still be called with this alias
   return 0;
 }
+```
