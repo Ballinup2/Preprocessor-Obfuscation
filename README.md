@@ -2,14 +2,16 @@
 Finds and randomizes data stored in the #define preprocessor
 
 # - How to Use -
-Obfuscator.cpp is a program designed to find #define preprocessors used to function name obfuscation and change the value stored in them. It will find and change all #define preprocessors within the specified file, it is recommended to create a file specifically to hold function and variable obfuscations
+Obfuscator.cpp is a program designed to find #define preprocessors used for function or variable name obfuscation and change the value stored in them. It will find and change all #define preprocessors within the specified file, it is recommended to create a file specifically to hold function and variable obfuscations
 
 # - Commands -
--help : Shows the help menu 
--verbose : shows a more diverse log of what the program is doing
+help : Shows the help menu
+verbose : shows a more verbose log of what the program is doing
 
-./Obfuscator <filepath> <verbosity>
-<filepath> is the command to be replaced by the -help command\n";
+```bash
+./Obfuscator "filepath" "verbosity"
+```
+"filepath" is the command to be replaced by the -help command\n";
 
 # - Example -
 ```cpp
